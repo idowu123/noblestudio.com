@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+<title>aboutwebsite</title>
+</head>
+<body>
+<style>
+    body{
+        margin:0px;
+      }
+      main{
+        margin-left:20px;
+        margin-right:20px;
+      }
+      @media(max-width:800px){
+        .hideonMobile{
+          display:none;
+        }
+        .menu-button{
+          display:block;
+        }
+      }
+      @media(max-width: 400px){
+        .sidebar{
+          width:100%
+        }
+      }
+      .sidebar{
+        position: fixed;
+        top:0;
+        right: 0;
+        height: 100vh;
+        width: 250px;
+        z-index: 999;
+        background-color: rgba(255, 255, 255, 0.0);
+        backdrop-filter: blur(10px);
+        display:none;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+      }
+      .sidebar li{
+      width: 200;
+      }
+      .sidebar a{
+        width:100%;
+      }
+      button{
+        background-color: red;
+        color:white;
+        border-radius: 10px;
+        box-shadow: none;
+        height:30px;
+        border: none;
+        font: 1em sans-serif;
+        
+      }
+      a{
+        color:white;
+        text-decoration: none;
+        text-transform:green ;
+        transition: rgb(159, 196, 159);
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight:50px;
+      }
+      a:hover{
+        color: rgb(189, 204, 133);
+      }
+      .card:hover{
+        background-color: rgba(31, 30, 30, 0.76);
+        color: white;
+        cursor: pointer;
+        transform: scale(1.03);
+        transform: all is ease;
+      }
+      
+      .container{
+        display: flex;
+        justify-content:center;
+        flex-wrap: wrap;
+        background-color:whitesmoke
+        background-attachment: scroll;
+        background-imag: url(bluebg\ \(1\).jpg);
+      }
+      .card-image{
+        display: flex;
+        justify-content: center;
+        margin-top:16px;
+        padding: 0px;
+        margin:px; 
+        text-decoration: none; 
+      
+      }
+      .card:hover{
+        background-color: rgba(31, 30, 30, 0.76);
+        color: white;
+        cursor: pointer;
+        transform: scale(1.03);
+        transform: all is ease;
+        animation:backwards;
+      }
+      .card{
+        background-color: rgb(230, 225, 221);
+        width:250px;
+        height:400px;
+        margin:20px;
+        padding: 10px;
+        border-radiu: 17px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        box-shadow:5px 11px 11px rgba(107, 106, 105, 0.52);
+        text-align:center;
+       
+        
+      }
+      .container-2{
+        display:flex;
+        justify-content:center;
+      }
+      .logo{
+        color:rgb(214, 8, 8);
+      }
+      nav {
+        background-color: black;
+      }
+      .navbar ul{
+        list-style-type:none ;
+        background-color:  rgb(47, 19, 92);
+        padding:0%;
+        margin:0%;  
+        overflow:hidden;
+      }
+      .navbar a{
+      color:white;     
+      text-decoration:none;
+      padding:15px;
+      display: block;
+      text-align: center:
+      }
+      .navbar a:active{
+        color:yellow;
+      }
+     .navbar li{
+        float:left;
+        
+      }
+      .navbar li:first-child{
+        margin-right: auto;
+        
+      }
+      .navbar a:hover{
+        background-color:rgb(10, 10, 10);
+      }
+    
+      h1 {
+        text-align:center;
+      }
+      body{
+        margin: 0px;
+      }
+      main{
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+      h1 {
+        color:rgb(68, 28, 212);
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      }
+      h1 :hover{
+        color: white;
+      }
+      hr{
+        scroll-behavior: smooth;
+      }
+      .image{
+        margin-top:60px;
+        margin-right: 90px;
+      }
+      .card3{
+        background-color: rgb(230, 225, 221);
+        width:250px;
+        height:550px;
+        margin:20px;
+        padding: 10px;
+        border-radiu: 17px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        box-shadow:5px 11px 11px rgba(107, 106, 105, 0.52);
+        text-align:cente
+      }
+      .card4{
+        background-color: rgb(230, 225, 221);
+        width:250px;
+        height:200px;
+        margin:20px;
+        padding: 10px;
+        border-radiu: 17px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        box-shadow:5px 11px 11px rgba(107, 106, 105, 0.52);
+        text-align:cente
+      }
+    
+</style> 
+<script>
+  function showSidebar(){
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'flex'
+  }
+  function hideSidebar(){
+     const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'none'
+  }
+ </script>
+  <nav class="navbar">
+    <ul class="sidebar">
+    <li onClick=hideSidebar()><a href="#"><img src="delete-sign.png" width="18px"  height="18px"></a></li>
+    <li> <a href="index.html">Home</a></li><hr>
+    <li> <a href="about.html"> About</a></li>
+    <li><a href="graphicsdesign.html">Graphic Design</a></l1>
+     <li><a href="photography.html">Photography</a></li>
+    </ul>
+  <ul>
+    <li><a href="#">DevMichael </a></li>
+    <li class="hideonMobile"> <a href="index.html">Home</a></li>
+     <li class="hideonMobile"> <a href="about.html"> About</a></li>
+      <li class="hideonMobile" ><a href="graphicsdesign.html">Graphic Design</a></l1>
+     <li  class="hideonMobile"> <a href="photography.html">Photography</a></li>
+     <li class="menu-button" onclick=showSidebar()> <a href="#"><img src="menu.png" width="30px"  height="30px"></a></li>   
+</ul> 
+</nav> 
+<main>
+    <section class="container">
+        <div class="image">
+        <center><img src="devmichael.png" width="200px" height="200px"></center>
+        <h1>DevMichael</h1><hr>
+        <center><p>Coding Instructor @ Kings House lerning Center </p></center>
+        <center><p>Web Developer & Graphics Artist </p></center><hr>
+       <center><p><img src="whatsapjpg (1).png" width="30px"> <img src="mailjpg.png" width="30px"> <img src="facebookjpg.jpg" width="30px"> <img src="githubpng.png" width="30px"> <img src="linkdinpng.png" width="30px"> <img src="youtubepng.png" width="30px"></p></center>
+        </div>
+        <div class="card">
+          <div class="card-images">
+          <h1>My Tools!</h1><hr>
+          <p>
+            Corel draw<br><br>
+            Photoshop<br><br>
+            Premier Pro<br><br>
+            Javascript <br><br>
+            HTML<br><br>
+            CSS<br><br>
+            Excel<br><br>
+            Power Point<br><br>
+            Github<br><br>
+          </p>
+        </div>
+        </div>
+        <div class="card2">
+            <div class="card-images">
+              <h1>About Me!</h1><hr>
+              <p>I am  graphic design Artist and webdeveloper, A poet and Writter, <br>
+                graduate of Moshood Abiola Polytechnic, I study Masss Communications, <br>
+                as an Artist and webdeveloper, i have work <br>with different brand and<br>
+                companies... I love creating web pages and eye catching design,<br>
+                read more about me on my social media handle.
+              </p>
+            </div>
+        </div>
+            <div class="card">
+              <div class="card-images">
+              <h1>Photoshop</h1><hr>
+              <p>i use Photoshop to edit picture, to convert jpg images to png images,<br>
+                i also use photoshop to create logo to promote brand identity, <br>i also use it to
+                to create a synergy with my other tools which <br> mmake it easir for me to 
+                work on graphic for a web design project.
+              </p>
+            </div>
+            </div>
+            <div class="card">
+              <div class="card-images">
+              <h1>Corel Draw</h1><hr>
+              <p>i use corelDraw to design flyers, bill board, e-flyers, banner<br>, i also use it
+                to create logo in order to <br>promote  brand identity, <br>i also use it to
+                to create a synergy with my other tools which <br> mmake it easir for me to 
+                work on graphic for a web design project.
+              </p>
+            </div>
+            </div>
+            <div class="card3">
+              <div class="card-images">
+              <h1>Premier Pro</h1><hr>
+              <p>i mainly use premier  pro to edit videos  and<br> content ranging
+              from film,animation, documentary,<br>interview session, animation, event coverage <br>
+                live podcast, youtube session, advertisement etc<br> it also create a synergy with my<br>
+                other tools of trade as a photographer,<br>Copy writer, Advertiser, Animation artist,<br>
+                Youtuber and content creator, premier is an important <br> tool for me to promote my work <br>
+                through  captivating videos and content,<br> to compliment my work as a photographer.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-images">
+            <h1>HTML & CSS</h1><hr>
+            <p>as a frontend developer i use HTML & CSS to create website<br>, 
+              for schools, churches, small scale business  and hotels
+            </p>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="card4">
+          <div class="card-images">
+          <h1>JavaScript </h1><hr>
+          <p>i use JavaScript to create a functionality to my<br>
+             website project, to add validation  and authentication<br>
+            on my website project.
+          </p>
+        </div>
+        </div>
+        <div class="card4">
+          <div class="card-images">
+          <h1>Github </h1><hr>
+          <p>i use use github to push and deploy my website poject online<br>
+          </p>
+        </div>
+        </div>
+        <div class="card">
+          <div class="card-images">
+          <h1>Power Point  </h1><hr>
+          <p>i use point  mainly for presentation  and animations, i have work <br>
+            on various animation project for companies  <br>to advertise their products  <br>
+          and service online in order to gain more customer <br> and generate more traffic to their social<br>
+          media page.
+          </p>
+        </div>
+        </div>
+        </section>
+        <center><p>07037972414 | 07010067689</p>
+        <p>solomon idowu michael <br> C 2025</p></center>
+  </main>
+  </body>
+  </html>

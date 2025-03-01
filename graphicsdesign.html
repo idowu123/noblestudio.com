@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+<title>aboutwebsite</title>
+</head>
+<body>
+    <style>
+        body{
+            margin:0px;
+          }
+          main{
+            margin-left:20px;
+            margin-right:20px;
+          }
+          @media(max-width:800px){
+            .hideonMobile{
+              display:none;
+            }
+            .menu-button{
+              display:block;
+            }
+          }
+          @media(max-width: 400px){
+            .sidebar{
+              width:100%
+            }
+          }
+          .sidebar{
+            position: fixed;
+            top:0;
+            right: 0;
+            height: 100vh;
+            width: 250px;
+            z-index: 999;
+            background-color: rgba(255, 255, 255, 0.0);
+            backdrop-filter: blur(10px);
+            display:none;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+          }
+          .sidebar li{
+          width: 200;
+          }
+          .sidebar a{
+            width:100%;
+          }
+          button{
+            background-color: red;
+            color:white;
+            border-radius: 10px;
+            box-shadow: none;
+            height:30px;
+            border: none;
+            font: 1em sans-serif;
+            
+          }
+          a{
+            color:white;
+            text-decoration: none;
+            text-transform:green ;
+            transition: rgb(159, 196, 159);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight:50px;
+          }
+          a:hover{
+            color: rgb(189, 204, 133);
+          }
+          .card:hover{
+            background-color: rgba(31, 30, 30, 0.76);
+            color: white;
+            cursor: pointer;
+            transform: scale(1.03);
+            transform: all is ease;
+          }
+          
+          .container{
+            display: flex;
+            justify-content:center;
+            flex-wrap: wrap;
+            background-color:whitesmoke
+            background-attachment: scroll;
+            background-imag: url(bluebg\ \(1\).jpg);
+          }
+          .card-image{
+            display: flex;
+            justify-content: center;
+            margin-top:16px;
+            padding: 0px;
+            margin:px; 
+            text-decoration: none; 
+          
+          }
+          .card:hover{
+            background-color: rgba(31, 30, 30, 0.76);
+            color: white;
+            cursor: pointer;
+            transform: scale(1.03);
+            transform: all is ease;
+            animation:backwards;
+          }
+          .card{
+            background-color: rgb(230, 225, 221);
+            width:250px;
+            height:400px;
+            margin:20px;
+            padding: 10px;
+            border-radiu: 17px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            box-shadow:5px 11px 11px rgba(107, 106, 105, 0.52);
+            text-align:center;
+           
+            
+          }
+          .container-2{
+            display:flex;
+            justify-content:center;
+          }
+          .logo{
+            color:rgb(214, 8, 8);
+          }
+          nav {
+            background-color: black;
+          }
+          .navbar ul{
+            list-style-type:none ;
+            background-color: rgb(47, 19, 92);
+            padding:0%;
+            margin:0%;  
+            overflow:hidden;
+          }
+          .navbar a{
+          color:white;     
+          text-decoration:none;
+          padding:15px;
+          display: block;
+          text-align: center:
+          }
+          .navbar a:active{
+            color:yellow;
+          }
+         .navbar li{
+            float:left;
+            
+          }
+          .navbar li:first-child{
+            margin-right: auto;
+            
+          }
+          .navbar a:hover{
+            background-color:rgb(8, 8, 8);
+          }
+        
+          h1 {
+            text-align:center;
+          }
+          body{
+            margin: 0px;
+          }
+          main{
+            margin-left: 20px;
+            margin-right: 20px;
+          }
+          h1 {
+            color:rgb(68, 28, 212);
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          }
+          h1 :hover{
+            color: white;
+          }
+          hr{
+            scroll-behavior: smooth;
+          }
+          .image{
+            margin-top:60px;
+            margin-right: 90px;
+            display: flex;
+          }
+          .card5{
+            background-image:url("notepad3.jpg");
+            background-position: fill;
+            background-repeat: no-repea;
+            width:700px;
+            height:550px;
+            margin:20px;
+            padding: 10px;
+            border-radiu: 17px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            box-shadow:5px 11px 11px rgba(107, 106, 105, 0.52);
+            text-align:cente
+          }
+          .card4{
+            background-color: rgb(230, 225, 221);
+            width:250px;
+            height:200px;
+            margin:20px;
+            padding: 10px;
+            border-radiu: 17px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            box-shadow:5px 11px 11px rgba(107, 106, 105, 0.52);
+            text-align:cente
+          }
+ </style> 
+<script>
+function showSidebar(){
+  const sidebar = document.querySelector('.sidebar')
+  sidebar.style.display = 'flex'
+}
+function hideSidebar(){
+   const sidebar = document.querySelector('.sidebar')
+  sidebar.style.display = 'none'
+}
+</script>
+    <nav class="navbar">
+        <ul class="sidebar">
+        <li onClick=hideSidebar()><a href="#"><img src="delete-sign.png" width="18px"  height="18px"></a></li>
+        <li> <a href="index.html">Home</a></li><hr>
+        <li> <a href="about.html"> About</a></li>
+        <li><a href="graphicsdesign.html">Graphic Design</a></l1>
+         <li><a href="photography.html">Photography</a></li>
+        </ul>
+      <ul>
+        <li><a href="DevMichael.html">DevMichael </a></li>
+        <li class="hideonMobile"> <a href="index.html">Home</a></li>
+         <li class="hideonMobile"> <a href="about.html"> About</a></li>
+          <li class="hideonMobile" ><a href="graphicsdesign.html">Graphic Design</a></l1>
+         <li  class="hideonMobile"> <a href="photography.html">Photography</a></li>
+         <li class="menu-button" onclick=showSidebar()> <a href="#"><img src="menu.png" width="30px"  height="30px"></a></li>   
+    </ul> 
+    </nav> 
+    <main>
+      <center><h1><br>Graphic Designs Portfolio</h1></center>
+        <section class="container">
+          <div class="card5">
+            <div class="card-images">
+            <h1></h1>
+            </p>
+          </div>
+          </div>
+        
+<div class="image">
+  <center> <a href="toronto logo.jpg"> <img id="img" src="toronto logo.jpg" width="200px"></a> 
+    <a href="notepad 2.jpg"> <img id="img-gal" src="notepad 2.jpg" width="200px"></a>
+      <a href="flyers 1.jpg"><img id="img-gal" src="flyers 1.jpg" width="200px"></a>
+        <a href="notepad3.jpg"><img id="img-gal" src="notepad3.jpg" width="200px"> </a>
+          <a href="notepad 1.jpg"><img id="img-gal" src="notepad 1.jpg" width="200px"></a>
+            <a href="dispatch.jpg"><img id="img-gal" src="dispatch.jpg" width="200px"></a>
+              <a href="flyers2.jpg"><img src="flyers2.jpg" width="200px"></a>
+                <a href="sharry empire.jpg"><img id="img-gal" src="sharry empire.jpg" width="200px"></a>
+                  <a href="abibat.jpg"><img id="img-gal" src="abibat.jpg" width="300px"> </a>
+                    <a href="gym2.jpg"><img id="img-gal" src="gym2.jpg" width="300px"> </a>
+                      <a href="gym.jpg"><img id="img-gal" src="gym.jpg" width="300px"></a>
+ </center>
+</div>
+</section>
+<center> <p>SOLOMON IDOWU MICHAEL<br>
+  2025</p></center>
+</main>
+</body>
+</html>
